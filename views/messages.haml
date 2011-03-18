@@ -1,0 +1,4 @@
+#messages
+  - @messages.each do |message|
+    %a{ :href => "#{params[:folder]}/#{message.first}" }= message.join(',')
+    %br
